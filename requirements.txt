@@ -3,7 +3,6 @@ pillow
 google-generativeai
 python-dotenv
 webcolors
-io
 base64
 colorsys
 random  
