@@ -3,5 +3,4 @@ pillow
 google-generativeai
 python-dotenv
 webcolors
-colorsys
 random  
