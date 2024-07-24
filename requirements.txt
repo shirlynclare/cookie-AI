@@ -1,0 +1,10 @@
+streamlit
+pillow
+google-generativeai
+python-dotenv
+webcolors
+PIL 
+io
+base64
+colorsys
+random  
