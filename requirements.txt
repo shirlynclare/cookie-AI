@@ -3,4 +3,3 @@ pillow
 google-generativeai
 python-dotenv
 webcolors
-random  
