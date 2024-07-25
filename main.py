@@ -130,6 +130,10 @@ def create_post(text, background_type, bg_color=None, color1=None, color2=None, 
     apply_text_effect(draw, text, position, font, font_color, text_effect)
     
     return image
+def chat_with_ai(prompt):
+    model = genai.GenerativeModel('gemini-pro')
+    response = model.generate_content(prompt)
+    return response.text
 
 def main():
     # Toggle for light mode and dark mode
