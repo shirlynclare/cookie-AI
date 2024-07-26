@@ -1,0 +1,99 @@
+1.
+(a)
+SYSTEM DESIGN 
+The project consists of a frontend built using streamlit Web application  which creates a user interface that is modified through different features to be interactive and navigable to users .
+The backend is developed using python .
+The project offers textual content generation, textual content moderation , image moderation , colour matching scheme and a chatbot. 
+1.
+(b)
+ARCHITECTURE 
+The project consists  of 8 files.
+(i)Community _guidelines.py
+-Comprises of a class defining a function which states out a summary of the meta guidelines 
+(ii)content_generator.py
+-Comprises of a class with two defined functions with try and except error handling measures to handle potential errors .
+The code configures gemini pro model and takes prompt and content type as input.
+(iii)
+Content_moderator.py
+Consists of a class with two defined functions for configuring the model  and constructs a prompt to moderate content as rejected or approved using the community guidelines.
+(iv)
+Image_moderator.py
+Comprises of a class two defined functions which configure the gemini-flash model and analyzes 
+(v)
+Main.py
+Comprises of defined functions .
+Defined functions for the color scheme génération  using the colorsys for RGB to HSV colors , complementary colours and analogous. 
+It also defines the chatbot function which takes prompts as input and returns a response to the user.
+Defines a function for generating a post which includes background color which can be linear or an image,including text effects like shadow , fonts and fonts fontsize to choose from and the text position.the function also allows the user to download the post created.
+The main function Comprises of the different features in a sidebar  , css style for both dark and light mode for user interface .
+(vi)
+.env
+The file stores the api key safely that is used to configure the gemini pro and gemini flash model .(vii)
+.gitignore
+Contains .env file which prevents it from being pushed to github which may lead to the apikey being disabled.
+(viii)
+Requirements. text
+Comprises of streamlit for  the user interface and Web application.
+Pillow for image synthesis.
+Google-generativeai for
+Python-dotenv for loading the apikey as a variable from the .env file .
+Web colors which provides colors used to generate complementary and analogous colours 
+
+2.INSTRUCTIONS FOR DEPLOYING AND USING THE SYSTEM
+-Ensure python is downloaded
+-Open the terminal.
+-run the command pip install -r requirements.txt to install the python modules and packages .
+-run the command
+Streamlit run main.py
+This provides  a local  host url which pops up as a window where you can access the application 
+-Use the app by selecting one of the features , follow on-screen instructions for each feature(input text or image ) , view the results 
+3.EXPLANATION FOR ALGORITHMS AND MODELS USED
+1.
+(a)
+SYSTEM DESIGN 
+The project consists of a frontend built using streamlit Web application  which creates a user interface that is modified through different features to be interactive and navigable to users .
+The backend is developed using python .
+The project offers textual content generation, textual content moderation , image moderation , colour matching scheme and a chatbot. 
+1.
+(b)
+ARCHITECTURE 
+The project consists  of 8 files.
+(i)Community _guidelines.py
+-Comprises of a class defining a function which states out a summary of the meta guidelines 
+(ii)content_generator.py
+-Comprises of a class with two defined functions with try and except error handling measures to handle potential errors .
+The code configures gemini pro model and takes prompt and content type as input.
+(iii)
+Content_moderator.py
+Consists of a class with two defined functions for configuring the model  and constructs a prompt to moderate content as rejected or approved using the community guidelines.
+(iv)
+Image_moderator.py
+Comprises of a class two defined functions which configure the gemini-flash model and analyzes 
+(v)
+Main.py
+Comprises of defined functions .
+Defined functions for the color scheme génération  using the colorsys for RGB to HSV colors , complementary colours and analogous. 
+It also defines the chatbot function which takes prompts as input and returns a response to the user.
+Defines a function for generating a post which includes background color which can be linear or an image,including text effects like shadow , fonts and fonts fontsize to choose from and the text position.the function also allows the user to download the post created.
+The main function Comprises of the different features in a sidebar  , css style for both dark and light mode for user interface .
+(vi)
+.env
+The file stores the api key safely that is used to configure the gemini pro and gemini flash model .(vii)
+.gitignore
+Contains .env file which prevents it from being pushed to github which may lead to the apikey being disabled.
+(viii)
+Requirements. text
+Comprises of streamlit for  the user interface and Web application.
+Pillow for image synthesis.
+Google-generativeai for
+Python-dotenv for loading the apikey as a variable from the .env file .
+Web colors which provides colors used to generate complementary and analogous colours 
+4.LIMITATION 
+The text to image model dalle requires a paid api key hence limiting the project from image content  generation. 
+The chatbot is limited to one language , English only since its not multilingual.
+5.POTENTIAL IMPROVEMENTS
+-Integrating models that are multilingual for multilingual users. 
+-Adding advanced image editing features.
+-Implementing user authentication for personalised experiences.
+-Including models  for image and video content generation 
+-Implement sophisticated color theory algorithm for better color suggestions.
