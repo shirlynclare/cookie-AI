@@ -189,7 +189,7 @@ def main():
     }
     .stButton>button {
         background-color: #1E90FF; 
-        color: black;
+        color: white;
     }
     .stSelectbox {
         background-color: #333333; 
@@ -236,7 +236,8 @@ def main():
             st.text_area("Generated Content", generated_content, height=200)
             moderation_result = content_moderator.moderate_content(generated_content)
             st.text_area("Moderation Result", moderation_result, height=100)
-
+           
+            
     elif selected_option == "Moderate Text Content":
         st.subheader("Moderate Text Content")
         user_content = st.text_area("Enter the content you want to moderate", height=200)
